@@ -3,7 +3,7 @@
 #include <fstream>
 using namespace std;
 
-#define DICTFILE "C:\\Users\\thoma\\Programs\\MadLib-Generator\\dict\\dictionary.txt"
+#define DICTFILE_NAME "dict/dictionary.txt"
 
 // Load files: Text input and word type dictionary
 
@@ -21,6 +21,9 @@ using namespace std;
     ** For each match, index in a cache with up to 100 words
 */
 
-int main(void) {
+int main(int argc, char** argv) {
+    ifstream InFile(argv[1]);
+    ifstream DictFile(DICTFILE_NAME);
+
     
 }
